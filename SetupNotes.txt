@@ -1,0 +1,7 @@
+Steps to setup project
+
+1. run "npm init --yes"
+2. run "npm install"
+3. run "npm install --save-dev --save-exact prettier"
+4. add "node_modules" to gitignore file
+5. Check name and description of package.json file
