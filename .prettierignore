@@ -8,3 +8,4 @@ package.json.lock
 dist
 .eslintrc.json
 .prettierrc
+babel.config.js

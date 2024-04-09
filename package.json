@@ -7,6 +7,9 @@
     "prettier-check": "prettier . --check"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "babel-jest": "^29.7.0",
     "css-loader": "^6.10.0",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
