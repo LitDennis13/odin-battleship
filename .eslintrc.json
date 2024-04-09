@@ -10,6 +10,7 @@
         "indent": ["error", 4],
         "no-undef": "off",
         "prefer-regex-literals": "off",
-        "no-prototype-builtins": "off"
+        "no-prototype-builtins": "off",
+        "no-plusplus": "off"
     } 
 }
