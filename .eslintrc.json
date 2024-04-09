@@ -11,6 +11,7 @@
         "no-undef": "off",
         "prefer-regex-literals": "off",
         "no-prototype-builtins": "off",
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "no-restricted-syntax": "off"
     } 
 }
