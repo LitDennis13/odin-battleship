@@ -1,8 +1,7 @@
 {
-    "extends" : ["airbnb","prettier"],
-    "plugins" :["prettier"],
+    "extends" : ["airbnb"],
+    "plugins" :[],
     "rules" : {
-        "prettier/prettier": ["error", {"tabWidth": 4}],
         "no-console" : "off",
         "no-unused-vars": "warn",
         "func-names": "off",
@@ -12,6 +11,7 @@
         "prefer-regex-literals": "off",
         "no-prototype-builtins": "off",
         "no-plusplus": "off",
-        "no-restricted-syntax": "off"
+        "no-restricted-syntax": "off",
+        "quotes": [2, "double", { "avoidEscape": true }]
     } 
 }
