@@ -1,5 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 :root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
     font-family: sans-serif;
-    background-color: #333333;
+    background-color: #444;
     color: white;
+    
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 1fr 4fr 1fr / 1fr .4fr 1fr;
+    height: 93vh;
+    width: 93vw;
+    
+}
+
+#title {
+    grid-area: 1 / 1 / 2 / 4;
+    font-size: 3rem;
+    justify-self: start;
+}
+
+#current-player {
+    grid-area: 2 / 1 / 3 / 4;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+#current-player-game-board-display,#other-player-game-board-display {
+    
+    display: flex;
+    flex-flow: row wrap;
+    
+
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0,200,255);
+}
+#current-player-game-board-display {
+    grid-area: 3 / 1 / 4 / 2;
+}
+#other-player-game-board-display {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+#game-board-location {
+    height: 10%;
+    width: 10%;
+}
+
+#game-board-location.none {
+    background-color:rgb(0,175,255);
+}
+#game-board-location.missed {
+    background-color:rgb(0, 94, 138);
+}
+#game-board-location.ship {
+    background-color:rgb(107, 0, 0);
+}
+#game-board-location.filler {
+    background-color:rgb(0,200,255);
+}
+#game-board-location.hit {
+    background-color:red;
+}
+#game-board-location.sunk {
+    background-color:rgba(107, 0, 0, 0.548);
 }
