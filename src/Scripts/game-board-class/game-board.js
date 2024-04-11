@@ -1,4 +1,4 @@
-import checkIfItemInArray from "../utility-functions";
+import checkIfItemInArray from "../utility-functions/utility-functions";
 
 class GameBoard {
     constructor() {
