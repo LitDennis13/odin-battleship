@@ -1,5 +1,6 @@
 // Styles
-import "./Styles/main-styles.css";
+import "./Styles/game-styles.css";
+import "./Styles/home-screen-styles.css";
 
 // Scripts
 import "./Scripts/utility-functions/utility-functions";
