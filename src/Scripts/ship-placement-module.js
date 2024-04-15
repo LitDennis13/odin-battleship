@@ -9,23 +9,23 @@ function placeShipsOnGameBoard(player) {
     const TwoLength = new Ship(`${player.name}'s Destroyer(2)`, 2);
 
     player.playerGameBoard.placeShip(FiveLength, [
-        [0, 0], [0, 1], [0, 2], [0, 3], [0, 4],
+        [9, 0], [9, 1], [9, 2], [9, 3], [9, 4],
     ]);
 
     player.playerGameBoard.placeShip(FourLength, [
-        [2, 0], [2, 1], [2, 2], [2, 3],
+        [7, 0], [7, 1], [7, 2], [7, 3],
     ]);
 
     player.playerGameBoard.placeShip(ThreeLengthC, [
-        [4, 0], [4, 1], [4, 2],
+        [5, 0], [5, 1], [5, 2],
     ]);
 
     player.playerGameBoard.placeShip(ThreeLengthS, [
-        [6, 0], [6, 1], [6, 2],
+        [3, 0], [3, 1], [3, 2],
     ]);
 
     player.playerGameBoard.placeShip(TwoLength, [
-        [8, 0], [8, 1],
+        [1, 0], [1, 1],
     ]);
 }
 
