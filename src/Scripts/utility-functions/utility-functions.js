@@ -27,4 +27,17 @@ function checkIfArrInArr(arr, arrToFind) {
     return false;
 }
 
-export { checkIfItemInArray, checkIfArrInArr, shuffleArray };
+function checkDuplicates(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i][0] === arr[j][0] && arr[i][1] === arr[j][1]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+export {
+    checkIfItemInArray, checkIfArrInArr, shuffleArray, checkDuplicates,
+};

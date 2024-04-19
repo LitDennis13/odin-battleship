@@ -1,4 +1,4 @@
-import { checkIfArrInArr } from "./utility-functions";
+import { checkIfArrInArr, checkDuplicates } from "./utility-functions";
 
 describe("Check if arrayA contains arrayB function", () => {
     test("Function Exists", () => {
@@ -33,5 +33,19 @@ describe("Check if arrayA contains arrayB function", () => {
         ];
         const testArrToFind = [3, 3];
         expect(checkIfArrInArr(testArr, testArrToFind)).toBe(true);
+    });
+});
+
+describe("Check Duplicates Function Tests", () => {
+    test("Check Duplicates Function Exists", () => {
+        expect(checkDuplicates).toBeDefined();
+    });
+
+    test("[[5,4], [4,4], [4,6]] returns false", () => {
+        expect(checkDuplicates([[5, 4], [4, 4], [4, 6]])).toBe(false);
+    });
+
+    test("[[5,4], [4,4], [4,6], [4,4]] returns true", () => {
+        expect(checkDuplicates([[5, 4], [4, 4], [4, 6], [4, 4]])).toBe(true);
     });
 });
