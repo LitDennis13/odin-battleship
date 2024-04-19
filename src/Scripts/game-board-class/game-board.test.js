@@ -59,7 +59,7 @@ describe("GameBoard Tests", () => {
         testGameBoard.placeShip(testShip, testLocationData);
 
         testGameBoard.receiveAttack([4, 7]);
-        
+
         expect(testGameBoard.shipsOnBoard[0].hits).toBe(1);
     });
 
@@ -152,7 +152,7 @@ describe("GameBoard Tests", () => {
         testGameBoard.receiveAttack([4, 6]);
         testGameBoard.receiveAttack([4, 7]);
         testGameBoard.receiveAttack([4, 8]);
-        
+
         expect(testGameBoard.allSunk()).toBe(true);
 
     });
